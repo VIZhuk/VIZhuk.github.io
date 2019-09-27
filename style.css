@@ -1,3 +1,13 @@
+/** { background-color: rgba(255, 0, 0, .2); }*/
+/** * { background-color: rgba(0, 255, 0, .2); }*/
+/** * * { background-color: rgba(0, 0, 255, .2); }*/
+/** * * * { background-color: rgba(255, 0, 255, .2); }*/
+/** * * * * { background-color: rgba(0, 255, 255, .2); }*/
+/** * * * * * { background-color: rgba(255, 255, 0, .2); }*/
+/** * * * * * * { background-color: rgba(255, 0, 0, .2); }*/
+/** * * * * * * * { background-color: rgba(0, 255, 0, .2); }*/
+/** * * * * * * * * { background-color: rgba(0, 0, 255, .2); }*/
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
@@ -5,14 +15,26 @@
 }
 
 header {
-    padding: 5px;
-    margin-bottom: 40px;
+    height: 100px;
+    padding: 16px 24px;
+    margin-bottom: 24px;
     background-color: #ff7100;
     text-align: center;
 }
 
-header > h1 {
-    padding-top: 10px;
+header .header-title {
+    float: left;
+    width: 150px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
 }
 
 
@@ -22,20 +44,45 @@ header > h1 {
 }
 
 .articles article {
-    margin-right: 40px;
-    margin-bottom: 40px;
-    padding: 25px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding: 16px 24px;
     background-color: #fff468;
+}
+
+.articles article a {
+    color: #035dee;
+    text-decoration: none;
+}
+
+.articles article a:hover {
+    color: #FFF;
+}
+
+.articles article a img {
+    width: 100px;
+    padding-right: 16px;
+    float: left;
 }
 
 .articles h2 {
     margin-top: 0;
 }
 
+/*.articles h2 a{*/
+/*    text-decoration: none;*/
+/*    color: #035dee;*/
+/*}*/
+
+/*.articles h2 a:hover{*/
+/*    color: #FFF;*/
+/*}*/
+
 aside {
-    padding: 5px;
+    padding: 16px 24px 600px 24px;
+    margin-bottom: 24px;
     background-color: #3cb878;
-    width: 275px;
+    width: 240px;
     float: right;
 }
 
@@ -43,14 +90,24 @@ aside .aside-header {
     padding-left: 20px;
 }
 
+nav {
+    text-align: right;
+    padding-top: 25px;
+}
+
 nav li{
     display: inline-block;
-    padding: 0 10px 0 10px;
+    padding-right: 24px;
 }
 
 nav a {
     text-decoration: none;
     color: #000;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #FFF;
 }
 
 footer {
